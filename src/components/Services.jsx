@@ -4,7 +4,7 @@ import cyberImg from '../assets/Services/cyber-security1.jpeg';
 import telecomImg from '../assets/Services/tele3.jpeg';
 import cloudImg from '../assets/Services/cloud2.jpeg';
 import managedImg from '../assets/Services/MSP2.png';
-import consultancyImg from '../assets/Services/consultancy.jpeg';
+import consultancyImg from '../assets/Services/consultancy2.jpeg';
 import webAppImg from '../assets/Services/web1.jpeg';
 
 const services = [

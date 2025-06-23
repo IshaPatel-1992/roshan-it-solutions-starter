@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.358d8a98.css",
+    "main.js": "/static/js/main.c4edc66a.js",
+    "static/media/MSP2.png": "/static/media/MSP2.166bfb19d54f9bb4ccd3.png",
+    "static/media/Janvi Technologies (1) (1) REV-01.png": "/static/media/Janvi Technologies (1) (1) REV-01.87c2b4d3005a9462d1d7.png",
+    "static/media/cyber-security1.jpeg": "/static/media/cyber-security1.0001250f621fd8f7b14b.jpeg",
+    "static/media/consultancy.jpeg": "/static/media/consultancy.f3b4db9f404d3065c8d1.jpeg",
+    "static/media/tele3.jpeg": "/static/media/tele3.feb77f5828ed95d94739.jpeg",
+    "index.html": "/index.html",
+    "main.358d8a98.css.map": "/static/css/main.358d8a98.css.map",
+    "main.c4edc66a.js.map": "/static/js/main.c4edc66a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.358d8a98.css",
+    "static/js/main.c4edc66a.js"
+  ]
+}
