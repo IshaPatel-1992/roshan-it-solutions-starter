@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'; // Install react-icons if not 
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const menuItems = ['Home', 'About', 'IT Solutions', 'ContactUs'];
+  const menuItems = ['Home', 'About', 'Services', 'ContactUs'];
 
   return (
     <header className="bg-white bg-opacity-70 backdrop-blur-md text-teal-700 shadow-md sticky top-0 z-50">

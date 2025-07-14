@@ -42,7 +42,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="it-solutions" className="bg-gray-100 py-20 px-6">
+    <section id="services" className="bg-gray-100 py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center text-teal-700 mb-10">
           Our IT Solutions
