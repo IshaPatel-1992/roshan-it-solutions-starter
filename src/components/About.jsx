@@ -1,40 +1,52 @@
 import React from 'react';
+import { FaUsers, FaHandshake, FaLightbulb } from 'react-icons/fa';
 
-//min-h-screen bg-gradient-to-r from-teal-300 via-white to-teal-400 font-sans
 export default function About() {
   return (
-    <section id="about" className="bg-gradient-to-br from-teal-300 via-white to-teal-100 py-24">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-extrabold text-teal-800 tracking-tight">Who We Are</h2>
-        <p className="mt-4 text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-          <span className="italic text-teal-600 font-medium">Janvi Technologies</span> is your partner in digital transformation, delivering modern IT solutions that are secure, scalable, and smart. 
-          From <span className="font-semibold text-gray-800">cybersecurity</span> to <span className="font-semibold text-gray-800">cloud integration</span>, we help businesses innovate with confidence.
+    <section
+      id="about"
+      className="bg-gradient-to-br from-teal-300 via-white to-teal-100 py-24 font-space"
+    >
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        {/* Section Heading */}
+        <h2 className="text-4xl md:text-5xl font-extrabold text-teal-800 tracking-tight drop-shadow-sm">
+          Who We Are
+        </h2>
+        <p className="mt-4 text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          <span className="italic text-teal-600 font-semibold">Janvi Technologies</span> is your partner in digital transformation — delivering secure, scalable, and smart IT solutions. From{" "}
+          <span className="font-bold text-gray-800">cybersecurity</span> to{" "}
+          <span className="font-bold text-gray-800">cloud integration</span>, we help businesses innovate with confidence.
         </p>
 
-        <div className="mt-10 grid gap-8 md:grid-cols-2 text-left">
-          <div>
-            <h3 className="text-2xl font-bold text-teal-700">Our Approach</h3>
-            <p className="mt-3 text-gray-600 leading-relaxed">
-              We embrace a <span className="font-medium">human-centered</span> approach, combining design thinking, technical expertise, and 
-              practical consultancy to create impactful solutions. Whether in healthcare, legal, dental, accounting, or hospitality — 
-              we tailor our services to meet your unique challenges.
+        {/* Divider */}
+        <div className="w-20 h-1 bg-teal-600 rounded-full mx-auto my-8"></div>
+
+        {/* Cards */}
+        <div className="mt-12 grid gap-8 md:grid-cols-3 text-left">
+          {/* Card 1 */}
+          <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
+            <FaLightbulb className="text-teal-600 text-3xl mb-4" />
+            <h3 className="text-xl font-bold text-teal-800 mb-2">Our Approach</h3>
+            <p className="text-gray-600 leading-relaxed">
+              We follow a <span className="font-medium">human-centered</span> approach, blending design thinking and technical expertise for impactful, practical solutions tailored for industries like healthcare, legal, and hospitality.
             </p>
           </div>
 
-          <div>
-            <h3 className="text-2xl font-bold text-teal-700">Our Partners</h3>
-            <p className="mt-3 text-gray-600 leading-relaxed">
-              Our strategic alliances with <span className="font-medium">Microsoft, Dell, HPE, Telus, Cisco, and United Cloud</span> 
-              ensure access to cutting-edge technologies and industry best practices. We bring enterprise-grade solutions to businesses of all sizes.
+          {/* Card 2 */}
+          <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
+            <FaHandshake className="text-teal-600 text-3xl mb-4" />
+            <h3 className="text-xl font-bold text-teal-800 mb-2">Our Partners</h3>
+            <p className="text-gray-600 leading-relaxed">
+              We collaborate with <span className="font-medium">Microsoft, Dell, HPE, Telus, Cisco,</span> and others — ensuring our clients benefit from world-class technologies and best practices.
             </p>
           </div>
 
-          <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold text-teal-700">What We Offer</h3>
-            <p className="mt-3 text-gray-600 leading-relaxed">
-              Whether you're seeking robust <span className="font-medium">cybersecurity</span>, scalable <span className="font-medium">telecom infrastructure</span>, 
-              or future-ready <span className="font-medium">web and mobile development</span>, Janvi Technologies is with you every step of the way. 
-              Let’s build your digital future — together.
+          {/* Card 3 */}
+          <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 md:col-span-1">
+            <FaUsers className="text-teal-600 text-3xl mb-4" />
+            <h3 className="text-xl font-bold text-teal-800 mb-2">What We Offer</h3>
+            <p className="text-gray-600 leading-relaxed">
+              Whether it's <span className="font-medium">cybersecurity</span>, <span className="font-medium">telecom infrastructure</span>, or advanced <span className="font-medium">web and mobile app development</span>, we build future-ready solutions.
             </p>
           </div>
         </div>

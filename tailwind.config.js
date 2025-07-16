@@ -11,7 +11,11 @@ module.exports = {
           DEFAULT: "#319795",
           dark: "#285E61"
         }
-      }
+      },
+      fontFamily: {
+        space: ['"Space Grotesk"', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif'],
+      },
     },
   },
   plugins: [],
