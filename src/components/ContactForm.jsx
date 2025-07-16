@@ -11,7 +11,7 @@ export default function ContactForm() {
       'service_i19x4ln',    // Replace with your EmailJS Service ID
       'template_a54j1lm',   // Replace with your EmailJS Template ID 
       formRef.current,
-      '-EJcj8U8XwGP3JJoh'     // Replace with your EmailJS Public Key
+      '-EJcj8U8XwGP3JJoh'   // Replace with your EmailJS Public Key
     )
     .then(() => {
       alert('Message sent successfully!');
@@ -24,14 +24,43 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contactus" className="bg-teal-900 text-white py-20 px-6">
-      <div className="max-w-xl mx-auto text-center">
-        <h2 className="text-3xl font-bold">Contact Us</h2>
-        <form ref={formRef} onSubmit={sendEmail} className="mt-6 space-y-4">
-          <input type="text" name="user_name" placeholder="Your Name" required className="w-full px-4 py-2 rounded text-black" />
-          <input type="email" name="user_email" placeholder="Your Email" required className="w-full px-4 py-2 rounded text-black" />
-          <textarea name="message" placeholder="Your Message" rows="4" required className="w-full px-4 py-2 rounded text-black"></textarea>
-          <button type="submit" className="bg-teal-600 hover:bg-teal-400 px-6 py-2 rounded">
+    <section id="contactus" className="bg-gradient-to-br from-teal-300 via-white to-teal-100 py-24">
+      <div className="max-w-2xl mx-auto px-6 text-center">
+        <h2 className="text-3xl font-bold text-teal-700 mb-6">Contact Us</h2>
+        <p className="text-gray-700 mb-10">
+          Have questions or need a custom solution? Fill out the form below and we’ll get back to you shortly.
+        </p>
+
+        <form
+          ref={formRef}
+          onSubmit={sendEmail}
+          className="bg-white bg-opacity-80 backdrop-blur-lg p-8 rounded-xl shadow-xl space-y-4 text-left"
+        >
+          <input
+            type="text"
+            name="user_name"
+            placeholder="Your Name"
+            required
+            className="w-full px-4 py-3 rounded-lg border border-teal-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
+          />
+          <input
+            type="email"
+            name="user_email"
+            placeholder="Your Email"
+            required
+            className="w-full px-4 py-3 rounded-lg border border-teal-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+            className="w-full px-4 py-3 rounded-lg border border-teal-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
+          ></textarea>
+          <button
+            type="submit"
+            className="w-full bg-teal-600 hover:bg-teal-500 text-white font-semibold py-3 rounded-lg transition duration-300"
+          >
             Send Message
           </button>
         </form>
@@ -39,4 +68,3 @@ export default function ContactForm() {
     </section>
   );
 }
-// Make sure to replace 'your_service_id', 'your_template_id', and 'your_public_key' with your actual EmailJS credentials.

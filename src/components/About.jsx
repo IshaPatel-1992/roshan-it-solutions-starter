@@ -1,8 +1,9 @@
 import React from 'react';
 
+//min-h-screen bg-gradient-to-r from-teal-300 via-white to-teal-400 font-sans
 export default function About() {
   return (
-    <section id="about" className="bg-white py-24 px-6">
+    <section id="about" className="bg-gradient-to-br from-teal-300 via-white to-teal-100 py-24">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-extrabold text-teal-800 tracking-tight">Who We Are</h2>
         <p className="mt-4 text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
